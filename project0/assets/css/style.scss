@@ -11,7 +11,6 @@ $dark-shade: #1A1D22;
 
 body {
   background-color: $light-shades;
-
   font-family: 'Merriweather', serif;
 }
 
@@ -62,71 +61,73 @@ a {
         text-decoration: none;
       }
     }
+  }
+}
 
-    .social-links {
-      a {
-        font-size: 18px;
-        display: inline-block;
-        background: $dark-shade;
-        color: $light-shades;
-        line-height: 1;
-        padding: 9px 0;
-        margin-right: 4px;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: 0.3s;
-      }
+#social-links {
+  a {
+    font-size: 18px;
+    display: inline-block;
+    background: $dark-shade;
+    color: $light-shades;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
 
-      a:hover {
-        background: $light-accent;
-        color: $light-shades;
-        text-decoration: none;
-      }
+  a:hover {
+    background: $light-accent;
+    color: $light-shades;
+    text-decoration: none;
+  }
+
+  .facebook {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+      content: fa-content($fa-var-facebook);
+    }
+  }
+
+  .instagram {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+      content: fa-content($fa-var-instagram);
+    }
+  }
+
+  .linkedin {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+      content: fa-content($fa-var-linkedin);
+    }
+  }
+
+  .twitter {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+      content: fa-content($fa-var-twitter);
     }
   }
 }
 
-.facebook {
-  @extend %fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-facebook);
-  }
-}
-
-.instagram {
-  @extend %fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-instagram);
-  }
-}
-
-.linkedin {
-  @extend %fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-linkedin);
-  }
-}
-
-.twitter{
-  @extend %fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }
-}
 
 /* Navigation menu */
 #nav-menu {
   padding-top: 30px;
+  padding-left: 50px;
 
   * {
     margin: 0;
@@ -142,7 +143,7 @@ a {
     display: flex;
     align-items: center;
     color: $dark-accent;
-    padding: 12px 15px;
+    padding: 8px 15px;
     margin-bottom: 8px;
     transition: 0.3s;
     font-size: 15px;
@@ -219,19 +220,27 @@ section {
       font-size: 26px;
       color: $dark-shade;
     }
-    ul {
+
+    table {
       list-style: none;
       padding: 0;
-      li {
+
+      td {
+        padding-bottom: 10px;
+        padding-left: 5px;
+      }
+
+      th {
         padding-bottom: 10px;
         strong {
           font-family: "Fira Sans", sans-serif;
         }
-      }
-      i{
-        font-size: 20px;
-        padding-right: 2px;
-        color: $light-accent;
+
+        i {
+          font-size: 20px;
+          padding-right: 2px;
+          color: $light-accent;
+        }
       }
     }
     p:last-child {

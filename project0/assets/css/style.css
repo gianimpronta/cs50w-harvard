@@ -10,10 +10,10 @@
 .fal,
 .fad,
 .fab,
-.twitter,
-.linkedin,
-.instagram,
-.facebook {
+#social-links .twitter,
+#social-links .linkedin,
+#social-links .instagram,
+#social-links .facebook {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -23,7 +23,7 @@
   line-height: 1;
 }
 
-.twitter, .linkedin, .instagram, .facebook {
+#social-links .twitter, #social-links .linkedin, #social-links .instagram, #social-links .facebook {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -128,10 +128,10 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
-.fa-pull-left.twitter,
-.fa-pull-left.linkedin,
-.fa-pull-left.instagram,
-.fa-pull-left.facebook {
+#social-links .fa-pull-left.twitter,
+#social-links .fa-pull-left.linkedin,
+#social-links .fa-pull-left.instagram,
+#social-links .fa-pull-left.facebook {
   margin-right: 0.3em;
 }
 .fa.fa-pull-right,
@@ -139,10 +139,10 @@
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
-.fa-pull-right.twitter,
-.fa-pull-right.linkedin,
-.fa-pull-right.instagram,
-.fa-pull-right.facebook {
+#social-links .fa-pull-right.twitter,
+#social-links .fa-pull-right.linkedin,
+#social-links .fa-pull-right.instagram,
+#social-links .fa-pull-right.facebook {
   margin-left: 0.3em;
 }
 
@@ -5892,7 +5892,7 @@ readers do not read off random characters that represent icons */
   src: url("../vendor/fontawesome/webfonts/fa-brands-400.eot");
   src: url("../vendor/fontawesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../vendor/fontawesome/webfonts/fa-brands-400.woff2") format("woff2"), url("../vendor/fontawesome/webfonts/fa-brands-400.woff") format("woff"), url("../vendor/fontawesome/webfonts/fa-brands-400.ttf") format("truetype"), url("../vendor/fontawesome/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
-.fab, .twitter, .linkedin, .instagram, .facebook {
+.fab, #social-links .twitter, #social-links .linkedin, #social-links .instagram, #social-links .facebook {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
@@ -5962,7 +5962,8 @@ a {
   color: #EBE3DA;
   text-decoration: none;
 }
-#header .profile .social-links a {
+
+#social-links a {
   font-size: 18px;
   display: inline-block;
   background: #1A1D22;
@@ -5976,31 +5977,28 @@ a {
   height: 36px;
   transition: 0.3s;
 }
-#header .profile .social-links a:hover {
+#social-links a:hover {
   background: #6BB9D6;
   color: #EBE3DA;
   text-decoration: none;
 }
-
-.facebook:before {
+#social-links .facebook:before {
   content: "";
 }
-
-.instagram:before {
+#social-links .instagram:before {
   content: "";
 }
-
-.linkedin:before {
+#social-links .linkedin:before {
   content: "";
 }
-
-.twitter:before {
+#social-links .twitter:before {
   content: "";
 }
 
 /* Navigation menu */
 #nav-menu {
   padding-top: 30px;
+  padding-left: 50px;
 }
 #nav-menu * {
   margin: 0;
@@ -6015,7 +6013,7 @@ a {
   display: flex;
   align-items: center;
   color: #b8ad92;
-  padding: 12px 15px;
+  padding: 8px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
@@ -6059,7 +6057,7 @@ a {
   left: 0;
 }
 .mobile-nav-active .mobile-nav-toggle i {
-    color: #6BB9D6;
+  color: #6BB9D6;
 }
 
 /* Main Content */
@@ -6082,17 +6080,21 @@ section .content h3 {
   font-size: 26px;
   color: #1A1D22;
 }
-section .content ul {
+section .content table {
   list-style: none;
   padding: 0;
 }
-section .content ul li {
+section .content table td {
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+section .content table th {
   padding-bottom: 10px;
 }
-section .content ul li strong {
+section .content table th strong {
   font-family: "Fira Sans", sans-serif;
 }
-section .content ul i {
+section .content table th i {
   font-size: 20px;
   padding-right: 2px;
   color: #6BB9D6;

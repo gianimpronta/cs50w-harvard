@@ -6158,6 +6158,36 @@ section .content p:last-child {
   font-style: normal;
 }
 
+.email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.email-form input, .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.email-form input {
+  height: 44px;
+}
+.email-form textarea {
+  padding: 10px 12px;
+  border-radius: 3px;
+}
+.email-form button[type=submit] {
+  background: #6BB9D6;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.email-form button[type=submit]:hover {
+  background: #1A1D22;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;

@@ -269,6 +269,42 @@ section {
   }
 }
 
+#skills {
+  .progress-bar-wrap {
+    background: $dark-accent;
+    border-radius: 3px;
+  }
+
+  .progress-bar {
+    width: 1px;
+    height: 15px;
+    transition: .9s;
+    background-color: $light-accent;
+    border-radius: inherit;
+  }
+
+  .progress {
+    height: 50px;
+    display: block;
+    background: none;
+
+    .skill {
+      padding: 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-size: 1.3em;
+      font-weight: 700;
+      font-family: "Fira Sans", sans-serif;
+      color: $dark-shade;
+
+      .val {
+        float: right;
+        font-style: normal;
+      }
+    }
+  }
+}
 
 
 

@@ -6127,6 +6127,37 @@ section .content p:last-child {
   font-style: italic;
 }
 
+#skills .progress-bar-wrap {
+  background: #b8ad92;
+  border-radius: 3px;
+}
+#skills .progress-bar {
+  width: 1px;
+  height: 15px;
+  transition: 0.9s;
+  background-color: #6BB9D6;
+  border-radius: inherit;
+}
+#skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+#skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  color: #1A1D22;
+}
+#skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;

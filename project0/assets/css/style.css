@@ -6188,6 +6188,58 @@ section .content p:last-child {
   background: #1A1D22;
 }
 
+.experience-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1A1D22;
+}
+
+.experience-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #b8ad92;
+  position: relative;
+}
+.experience-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+  color: #1A1D22;
+  margin-bottom: 10px;
+}
+.experience-item h5 {
+  font-size: 16px;
+  background: #EBE3DA;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience-item ul {
+  padding-left: 20px;
+}
+.experience-item ul li {
+  padding-bottom: 10px;
+}
+.experience-item:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #EBE3DA;
+  border: 2px solid #b8ad92;
+}
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;

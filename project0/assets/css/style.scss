@@ -340,6 +340,61 @@ section {
   }
 }
 
+.experience-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $dark-shade;
+}
+
+.experience-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid $dark_accent;
+  position: relative;
+
+  h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Fira Sans", sans-serif;
+    color: $dark-shade;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    font-size: 16px;
+    background: $light-shades;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: $light-shades;
+    border: 2px solid $dark-accent;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
 
 @media (max-width: 1199px) {
   #header {
